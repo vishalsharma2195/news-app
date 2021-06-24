@@ -1,0 +1,114 @@
+@import '../../app.scss';
+
+.content{
+    padding-top: 10px;
+    background-color: white;
+    padding-left: 15rem;
+    @include mobile{
+        padding-left: 1.5rem;
+    }
+   
+    h2{
+        margin: 10px 20px;
+        padding: 10px 30px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .container{
+        border: 2px solid rgb(248, 245, 245);
+        border-radius: 10px;
+        margin: 25px 50px;
+        height: 250px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: center;
+
+        @include mobile{
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 250px;
+        }
+
+        .left{
+            margin: 0px 10px;
+            padding: 10px;
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+
+            @include mobile{
+                width: 200px;
+                height: 200px;
+            }
+
+            .head-left{
+                margin-left: 10px;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: 700;
+
+                    @include mobile{
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            span{
+                font-size: 12px;
+                font-weight: 400;
+                @include mobile{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+           li{
+               font-size: 15px;
+               font-weight: 600;
+                margin-top: 20px;
+
+                @include mobile{
+                    display: none;
+                }
+           } 
+        }
+        
+        .right{
+            width: 200px;
+            height: 200px;
+
+            @include mobile{
+                width: 150px;
+                height: 150px;
+                margin: 20px 10px;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+
+                @include mobile{
+                    width: 90px;
+                    height: 70px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    
+    }
+}
+
+

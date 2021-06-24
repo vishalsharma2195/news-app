@@ -1,0 +1,29 @@
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: rgb(3, 3, 83);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 3px solid lightgray;
+    .wrapper{
+        padding: 5px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+
+
+            .logo{
+                text-decoration: none;
+                color: inherit;
+                img{
+                    width: 65px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
