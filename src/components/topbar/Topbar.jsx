@@ -7,7 +7,7 @@ function Topbar() {
         <div className='topbar'>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#top" className='logo'><img src={news} alt="logo" /></a>
+                    <a href="#head" className='logo'><img src={news} alt="logo" /></a>
                 </div>
             </div>
         </div>
